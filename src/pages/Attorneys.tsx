@@ -383,38 +383,6 @@ const Attorneys = () => {
         </div>
       </section>
 
-      {/* Video Introduction Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-              A Message From Our Team
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Watch our attorneys discuss their commitment to providing exceptional legal service 
-              and their passion for protecting clients' rights.
-            </p>
-            
-            {/* Video Placeholder */}
-            <div className="relative bg-muted rounded-lg shadow-professional p-8 sm:p-16">
-              <div className="aspect-video bg-muted-foreground/10 rounded-lg flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto">
-                    <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-foreground">Team Introduction Video</h3>
-                    <p className="text-sm text-muted-foreground">Click to play</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Call-to-Action Section */}
       <section className="py-20 bg-hero-gradient">
         <div className="container mx-auto px-4 text-center">
