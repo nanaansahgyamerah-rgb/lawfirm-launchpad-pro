@@ -93,7 +93,7 @@ const Attorneys = () => {
       id: 3,
       name: "Jennifer Thompson",
       title: "Partner - Family Law",
-      image: "/placeholder.svg",
+      image: "https://images.pexels.com/photos/4427622/pexels-photo-4427622.jpeg",
       education: [
         "J.D., UCLA School of Law, 2001",
         "M.S.W., USC School of Social Work, 1998",
