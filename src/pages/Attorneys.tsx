@@ -127,7 +127,7 @@ const Attorneys = () => {
       id: 4,
       name: "David Chen",
       title: "Associate Attorney - Real Estate Law",
-      image: "/placeholder.svg",
+      image: "https://images.pexels.com/photos/3831569/pexels-photo-3831569.jpeg",
       education: [
         "J.D., USC Gould School of Law, 2010",
         "M.B.A., USC Marshall School of Business, 2008",
