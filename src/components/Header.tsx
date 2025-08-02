@@ -54,8 +54,8 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="hero" size="default" className="xl:px-6">
-              Free Consultation
+            <Button variant="hero" size="default" className="xl:px-6" asChild>
+              <Link to="/free-consultation">Free Consultation</Link>
             </Button>
           </div>
 
