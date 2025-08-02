@@ -334,8 +334,10 @@ const AboutUs = () => {
               Contact us today for your free consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4">
-                Schedule Free Consultation
+              <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4" asChild>
+                <Link to="/free-consultation">
+                  Schedule Free Consultation
+                </Link>
               </Button>
               <Button variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 border-white text-white hover:bg-white hover:text-primary">
                 Call (555) 123-4567
