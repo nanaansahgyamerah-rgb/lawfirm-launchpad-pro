@@ -9,6 +9,7 @@ import PracticeAreas from "./pages/PracticeAreas";
 import Attorneys from "./pages/Attorneys";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
+import FreeConsultation from "./pages/FreeConsultation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
