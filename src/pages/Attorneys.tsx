@@ -25,7 +25,7 @@ const Attorneys = () => {
       id: 1,
       name: "Sarah Mitchell",
       title: "Senior Partner & Managing Attorney",
-      image: "/placeholder.svg",
+      image: "https://images.pexels.com/photos/4427610/pexels-photo-4427610.jpeg",
       education: [
         "J.D., Harvard Law School, 1995",
         "B.A. Political Science, Yale University, 1992"
