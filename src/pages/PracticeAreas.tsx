@@ -89,23 +89,23 @@ const PracticeAreas = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary/90 text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6">Our Practice Areas</h1>
-          <p className="text-xl max-w-3xl mx-auto leading-relaxed">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Our Practice Areas</h1>
+          <p className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
             With decades of combined experience, our legal team provides expert representation 
             across multiple practice areas, ensuring comprehensive legal solutions for all your needs.
           </p>
-          <div className="flex justify-center items-center gap-8 mt-8 flex-wrap">
+          <div className="flex justify-center items-center gap-4 sm:gap-8 mt-8 flex-wrap">
             <div className="flex items-center gap-2">
               <Scale className="w-6 h-6 text-accent" />
-              <span className="font-semibold">30+ Years Combined Experience</span>
+              <span className="font-semibold text-sm sm:text-base">30+ Years Combined Experience</span>
             </div>
             <div className="flex items-center gap-2">
               <Award className="w-6 h-6 text-accent" />
-              <span className="font-semibold">2000+ Cases Won</span>
+              <span className="font-semibold text-sm sm:text-base">2000+ Cases Won</span>
             </div>
             <div className="flex items-center gap-2">
               <Users className="w-6 h-6 text-accent" />
-              <span className="font-semibold">5000+ Clients Served</span>
+              <span className="font-semibold text-sm sm:text-base">5000+ Clients Served</span>
             </div>
           </div>
         </div>
@@ -114,17 +114,17 @@ const PracticeAreas = () => {
       {/* Practice Areas Grid */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {practiceAreas.map((area, index) => (
               <Card key={index} className="group hover:shadow-professional transition-all duration-300 hover:-translate-y-2 border-border/50 overflow-hidden">
                 <CardHeader className="bg-gradient-to-r from-accent/5 to-accent/10 pb-6">
                   <div className="flex items-start justify-between">
-                    <div className="flex items-center gap-4">
-                      <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center group-hover:bg-accent/30 transition-colors">
-                        <area.icon className="w-8 h-8 text-accent" />
+                    <div className="flex items-center gap-3 sm:gap-4">
+                      <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/20 rounded-full flex items-center justify-center group-hover:bg-accent/30 transition-colors">
+                        <area.icon className="w-6 h-6 sm:w-8 sm:h-8 text-accent" />
                       </div>
                       <div>
-                        <CardTitle className="text-2xl font-bold text-foreground mb-2">
+                        <CardTitle className="text-xl sm:text-2xl font-bold text-foreground mb-2">
                           {area.title}
                         </CardTitle>
                         <div className="flex gap-2 flex-wrap">
@@ -140,13 +140,13 @@ const PracticeAreas = () => {
                       </div>
                     </div>
                   </div>
-                  <CardDescription className="text-muted-foreground text-base leading-relaxed">
+                  <CardDescription className="text-muted-foreground text-sm sm:text-base leading-relaxed">
                     {area.description}
                   </CardDescription>
                 </CardHeader>
                 
                 <CardContent className="pt-6">
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-muted-foreground mb-6 leading-relaxed text-sm sm:text-base">
                     {area.longDescription}
                   </p>
                   
@@ -155,7 +155,7 @@ const PracticeAreas = () => {
                       <Shield className="w-4 h-4 text-accent mr-2" />
                       Services We Provide
                     </h4>
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {area.features.map((feature, idx) => (
                         <div key={idx} className="flex items-center text-sm text-muted-foreground">
                           <CheckCircle className="w-4 h-4 text-accent mr-2 flex-shrink-0" />
@@ -168,11 +168,11 @@ const PracticeAreas = () => {
                   <div className="bg-muted/50 rounded-lg p-4 mb-6">
                     <div className="grid grid-cols-2 gap-4 text-center">
                       <div>
-                        <div className="text-2xl font-bold text-primary">{area.cases}</div>
+                        <div className="text-xl sm:text-2xl font-bold text-primary">{area.cases}</div>
                         <div className="text-xs text-muted-foreground">Successfully Handled</div>
                       </div>
                       <div>
-                        <div className="text-2xl font-bold text-accent">{area.successRate}</div>
+                        <div className="text-xl sm:text-2xl font-bold text-accent">{area.successRate}</div>
                         <div className="text-xs text-muted-foreground">Success Rate</div>
                       </div>
                     </div>
@@ -191,8 +191,8 @@ const PracticeAreas = () => {
       {/* Call to Action */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Need Legal Assistance?</h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Need Legal Assistance?</h2>
+          <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto">
             Don't wait - get the experienced legal representation you deserve. 
             Contact us today for a free consultation.
           </p>

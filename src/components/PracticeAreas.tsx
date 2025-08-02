@@ -55,26 +55,26 @@ const PracticeAreas = () => {
     <section className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Our Practice Areas
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             We provide comprehensive legal services across multiple practice areas, 
             ensuring expert representation for all your legal needs.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {practiceAreas.map((area, index) => (
             <Card key={index} className="group hover:shadow-professional transition-all duration-300 hover:-translate-y-1 border-border/50">
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
-                  <area.icon className="w-8 h-8 text-accent" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
+                  <area.icon className="w-6 h-6 sm:w-8 sm:h-8 text-accent" />
                 </div>
-                <CardTitle className="text-xl font-semibold text-foreground">
+                <CardTitle className="text-lg sm:text-xl font-semibold text-foreground">
                   {area.title}
                 </CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardDescription className="text-sm sm:text-base text-muted-foreground">
                   {area.description}
                 </CardDescription>
               </CardHeader>
@@ -89,7 +89,7 @@ const PracticeAreas = () => {
                   ))}
                 </ul>
                 
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors text-sm sm:text-base">
                   Learn More
                 </Button>
               </CardContent>
@@ -98,7 +98,7 @@ const PracticeAreas = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg">
+          <Button variant="hero" size="lg" className="w-full sm:w-auto">
             Schedule Your Consultation
           </Button>
         </div>

@@ -51,21 +51,21 @@ const Testimonials = () => {
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Client Success Stories
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Don't just take our word for it. Here's what our clients say about 
             their experience working with our legal team.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="group hover:shadow-professional transition-all duration-300 hover:-translate-y-1 bg-background">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <div className="flex items-start justify-between mb-4">
-                  <Quote className="w-8 h-8 text-accent/60" />
+                  <Quote className="w-6 h-6 sm:w-8 sm:h-8 text-accent/60" />
                   <div className="flex gap-1">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-accent text-accent" />
@@ -73,14 +73,14 @@ const Testimonials = () => {
                   </div>
                 </div>
                 
-                <blockquote className="text-muted-foreground leading-relaxed mb-6">
+                <blockquote className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-6">
                   "{testimonial.content}"
                 </blockquote>
                 
                 <div className="border-t pt-4">
                   <div className="flex justify-between items-start">
                     <div>
-                      <h4 className="font-semibold text-foreground">
+                      <h4 className="font-semibold text-foreground text-sm sm:text-base">
                         {testimonial.name}
                       </h4>
                       <p className="text-sm text-muted-foreground">
@@ -101,9 +101,9 @@ const Testimonials = () => {
 
         {/* Overall Rating */}
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center bg-background rounded-lg p-6 shadow-elegant">
+          <div className="inline-flex items-center bg-background rounded-lg p-4 sm:p-6 shadow-elegant">
             <div className="text-center">
-              <div className="text-4xl font-bold text-accent mb-2">4.9/5</div>
+              <div className="text-3xl sm:text-4xl font-bold text-accent mb-2">4.9/5</div>
               <div className="flex gap-1 justify-center mb-2">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-accent text-accent" />

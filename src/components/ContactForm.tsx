@@ -31,24 +31,24 @@ const ContactForm = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Get Your Free Consultation
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to discuss your legal matter? Contact us today for a free consultation. 
             We're here to help you navigate your legal challenges.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Form */}
           <Card className="shadow-professional">
             <CardHeader>
-              <CardTitle className="text-2xl text-center">Contact Us</CardTitle>
+              <CardTitle className="text-xl sm:text-2xl text-center">Contact Us</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Full Name *</Label>
                     <Input
@@ -72,7 +72,7 @@ const ContactForm = () => {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone Number</Label>
                     <Input
@@ -125,14 +125,14 @@ const ContactForm = () => {
           </Card>
 
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-6 lg:space-y-8">
             <Card className="shadow-elegant">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <div className="flex items-start gap-4">
                   <MapPin className="w-6 h-6 text-accent mt-1" />
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Our Office</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="font-semibold text-foreground mb-2 text-base sm:text-lg">Our Office</h3>
+                    <p className="text-muted-foreground text-sm sm:text-base">
                       123 Legal Street<br />
                       Law City, LC 12345<br />
                       United States
@@ -143,12 +143,12 @@ const ContactForm = () => {
             </Card>
 
             <Card className="shadow-elegant">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <div className="flex items-start gap-4">
                   <Phone className="w-6 h-6 text-accent mt-1" />
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Phone & Fax</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="font-semibold text-foreground mb-2 text-base sm:text-lg">Phone & Fax</h3>
+                    <p className="text-muted-foreground text-sm sm:text-base">
                       Phone: (555) 123-4567<br />
                       Fax: (555) 123-4568<br />
                       Emergency: (555) 123-4569
@@ -159,12 +159,12 @@ const ContactForm = () => {
             </Card>
 
             <Card className="shadow-elegant">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <div className="flex items-start gap-4">
                   <Mail className="w-6 h-6 text-accent mt-1" />
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Email</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="font-semibold text-foreground mb-2 text-base sm:text-lg">Email</h3>
+                    <p className="text-muted-foreground text-sm sm:text-base">
                       General: info@lawfirmpro.com<br />
                       New Clients: newclient@lawfirmpro.com<br />
                       Support: support@lawfirmpro.com
@@ -175,12 +175,12 @@ const ContactForm = () => {
             </Card>
 
             <Card className="shadow-elegant">
-              <CardContent className="p-6">
+              <CardContent className="p-4 sm:p-6">
                 <div className="flex items-start gap-4">
                   <Clock className="w-6 h-6 text-accent mt-1" />
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Office Hours</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="font-semibold text-foreground mb-2 text-base sm:text-lg">Office Hours</h3>
+                    <p className="text-muted-foreground text-sm sm:text-base">
                       Monday - Friday: 8:00 AM - 6:00 PM<br />
                       Saturday: 9:00 AM - 1:00 PM<br />
                       Sunday: Emergency Only

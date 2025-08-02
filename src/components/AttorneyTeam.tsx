@@ -45,10 +45,10 @@ const AttorneyTeam = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Meet Our Expert Legal Team
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Our experienced attorneys bring decades of combined expertise and a proven track record 
             of success across multiple practice areas.
           </p>
@@ -60,25 +60,25 @@ const AttorneyTeam = () => {
             <img 
               src={teamLawyers} 
               alt="Our Legal Team" 
-              className="w-full h-96 object-cover"
+              className="w-full h-64 sm:h-80 lg:h-96 object-cover"
             />
             <div className="absolute inset-0 bg-primary/20"></div>
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {attorneys.map((attorney, index) => (
             <Card key={index} className="group hover:shadow-professional transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center">
-                <div className="w-24 h-24 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <GraduationCap className="w-12 h-12 text-accent" />
+                <div className="w-20 h-20 sm:w-24 sm:h-24 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <GraduationCap className="w-10 h-10 sm:w-12 sm:h-12 text-accent" />
                 </div>
                 
-                <CardTitle className="text-xl font-bold text-foreground">
+                <CardTitle className="text-lg sm:text-xl font-bold text-foreground">
                   {attorney.name}
                 </CardTitle>
                 
-                <CardDescription className="text-primary font-semibold">
+                <CardDescription className="text-primary font-semibold text-sm sm:text-base">
                   {attorney.title}
                 </CardDescription>
                 
@@ -115,7 +115,7 @@ const AttorneyTeam = () => {
                   </ul>
                 </div>
 
-                <div className="flex gap-2 pt-4 border-t">
+                <div className="flex flex-col sm:flex-row gap-2 pt-4 border-t">
                   <Button variant="outline" size="sm" className="flex-1">
                     <Mail className="w-4 h-4 mr-1" />
                     Email
@@ -131,7 +131,7 @@ const AttorneyTeam = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg">
+          <Button variant="hero" size="lg" className="w-full sm:w-auto">
             Schedule a Meeting
           </Button>
         </div>

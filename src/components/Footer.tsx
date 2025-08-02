@@ -26,11 +26,11 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold">LawFirm Pro</h3>
-            <p className="text-primary-foreground/80 leading-relaxed">
+            <h3 className="text-xl sm:text-2xl font-bold">LawFirm Pro</h3>
+            <p className="text-primary-foreground/80 leading-relaxed text-sm sm:text-base">
               Your trusted legal advocates with over 25 years of combined experience. 
               We provide exceptional legal representation with personalized attention.
             </p>
@@ -53,7 +53,7 @@ const Footer = () => {
 
           {/* Practice Areas */}
           <div className="space-y-6">
-            <h4 className="text-lg font-semibold">Practice Areas</h4>
+            <h4 className="text-base sm:text-lg font-semibold">Practice Areas</h4>
             <ul className="space-y-3">
               {practiceAreas.map((area, index) => (
                 <li key={index}>
@@ -70,7 +70,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-6">
-            <h4 className="text-lg font-semibold">Quick Links</h4>
+            <h4 className="text-base sm:text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -87,19 +87,19 @@ const Footer = () => {
 
           {/* Newsletter & Social */}
           <div className="space-y-6">
-            <h4 className="text-lg font-semibold">Stay Connected</h4>
+            <h4 className="text-base sm:text-lg font-semibold">Stay Connected</h4>
             <p className="text-primary-foreground/80 text-sm">
               Subscribe to our newsletter for legal updates and insights.
             </p>
             
             <div className="space-y-3">
-              <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-3 py-2 text-sm bg-white/10 border border-white/20 rounded-md text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="flex-1 px-3 py-2 text-sm bg-white/10 border border-white/20 rounded-md text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-accent w-full sm:w-auto"
                 />
-                <Button variant="gold" size="sm">
+                <Button variant="gold" size="sm" className="w-full sm:w-auto">
                   Subscribe
                 </Button>
               </div>
@@ -107,7 +107,7 @@ const Footer = () => {
 
             <div className="space-y-4">
               <h5 className="font-medium">Follow Us</h5>
-              <div className="flex gap-3">
+              <div className="flex gap-3 justify-center sm:justify-start">
                 <Button variant="ghost" size="icon" className="hover:bg-white/10 hover:text-accent">
                   <Facebook className="w-5 h-5" />
                 </Button>
@@ -133,7 +133,7 @@ const Footer = () => {
             © {currentYear} LawFirm Pro. All rights reserved.
           </p>
           
-          <div className="flex gap-6 text-sm">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-sm text-center">
             <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">
               Privacy Policy
             </a>
