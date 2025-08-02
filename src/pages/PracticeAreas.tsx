@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -197,8 +198,10 @@ const PracticeAreas = () => {
             Contact us today for a free consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-              Schedule Free Consultation
+            <Button variant="hero" size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
+              <Link to="/free-consultation">
+                Schedule Free Consultation
+              </Link>
             </Button>
             <Button variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
               Call (555) 123-4567

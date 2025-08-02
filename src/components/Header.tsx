@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MapPin } from "lucide-react";
 
@@ -53,8 +54,8 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="hero" size="default" className="xl:px-6">
-              Free Consultation
+            <Button variant="hero" size="default" className="xl:px-6" asChild>
+              <Link to="/free-consultation">Free Consultation</Link>
             </Button>
           </div>
 
@@ -84,8 +85,8 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="hero" size="default" className="self-start w-full sm:w-auto">
-                Free Consultation
+              <Button variant="hero" size="default" className="self-start w-full sm:w-auto" asChild>
+                <Link to="/free-consultation">Free Consultation</Link>
               </Button>
               
               {/* Mobile contact info */}
