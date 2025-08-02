@@ -85,8 +85,8 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="hero" size="default" className="self-start w-full sm:w-auto">
-                Free Consultation
+              <Button variant="hero" size="default" className="self-start w-full sm:w-auto" asChild>
+                <Link to="/free-consultation">Free Consultation</Link>
               </Button>
               
               {/* Mobile contact info */}
