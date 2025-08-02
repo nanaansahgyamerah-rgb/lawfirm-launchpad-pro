@@ -397,9 +397,11 @@ const Attorneys = () => {
               how we can help protect your rights and interests.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4">
-                <Calendar className="w-5 h-5 mr-2" />
-                Schedule Free Consultation
+              <Button variant="hero" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4" asChild>
+                <Link to="/free-consultation">
+                  <Calendar className="w-5 h-5 mr-2" />
+                  Schedule Free Consultation
+                </Link>
               </Button>
               <Button variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 border-white text-white hover:bg-white hover:text-primary">
                 <Phone className="w-5 h-5 mr-2" />
