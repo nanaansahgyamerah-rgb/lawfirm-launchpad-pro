@@ -59,7 +59,7 @@ const Attorneys = () => {
       id: 2,
       name: "Michael Rodriguez",
       title: "Partner - Litigation Department",
-      image: "/placeholder.svg",
+      image: "https://images.pexels.com/photos/7841782/pexels-photo-7841782.jpeg",
       education: [
         "J.D., Stanford Law School, 1998",
         "B.S. Criminal Justice, UC Berkeley, 1995"
