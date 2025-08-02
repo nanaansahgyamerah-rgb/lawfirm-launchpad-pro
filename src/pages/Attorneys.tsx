@@ -161,7 +161,7 @@ const Attorneys = () => {
       id: 5,
       name: "Lisa Anderson",
       title: "Associate Attorney - Estate Planning",
-      image: "/placeholder.svg",
+      image: "https://images.pexels.com/photos/14634929/pexels-photo-14634929.jpeg",
       education: [
         "J.D., Loyola Law School, 2012",
         "LL.M. Taxation, NYU School of Law, 2013",
